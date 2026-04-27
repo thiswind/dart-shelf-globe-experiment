@@ -94,16 +94,26 @@ GET /add?a={num1}&b={num2}
 
 ## 🎯 在线演示
 
-本项目已成功部署到 Globe.dev：
+### ⚠️ 重要：Globe.dev 平台已关闭
 
-> **🌐 公网地址**: https://dart-shelf-hello.globeapp.dev
+**Globe.dev 已于 2026年4月3日正式停止服务**，因此无法按照讲义部署到该平台。这是讲义发布后发生的外部环境变化。
 
-你可以通过以下链接直接测试：
-- https://dart-shelf-hello.globeapp.dev/
-- https://dart-shelf-hello.globeapp.dev/hello
-- https://dart-shelf-hello.globeapp.dev/hello/同学你好
-- https://dart-shelf-hello.globeapp.dev/time
-- https://dart-shelf-hello.globeapp.dev/add?a=10&b=20
+### 替代部署方案
+
+你可以使用以下平台部署 Dart 后端：
+1. **Vercel / Netlify** - 支持 Serverless Functions
+2. **Fly.io** - 支持 Docker 部署
+3. **Google Cloud Run** - 容器化部署
+4. **阿里云 / 腾讯云** - 国内云服务器
+
+### 本地演示
+
+由于 Globe 已关闭，请在本地运行测试。启动后访问：
+- http://localhost:8080/
+- http://localhost:8080/hello
+- http://localhost:8080/hello/同学你好
+- http://localhost:8080/time
+- http://localhost:8080/add?a=10&b=20
 
 ## ⚠️ 实验中发现的问题与注意事项
 
@@ -260,6 +270,8 @@ bin/server.dart
 | 入口文件必须选 `bin/server.dart` | ✅ 正确 | 非常重要，默认值是错的 |
 
 **整体评价**：讲义质量非常高，内容准确，踩坑点都提前警告了。特别是关于 `shelf_router` 参数写法变化的提醒，是非常有价值的实战经验。
+
+**唯一的外部环境变化**：Globe.dev 已于 2026年4月3日停止服务，这是讲义发布后发生的客观变化，与讲义内容本身无关。建议未来版本的讲义替换为其他 Dart 部署平台（如 Fly.io 或 Vercel Edge Functions）。
 
 ---
 
